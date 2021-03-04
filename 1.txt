@@ -1,0 +1,42 @@
+参考：
+https://www.cnblogs.com/manjin666/p/9634324.html
+
+本地操作：
+----------------------------------------------------------------
+
+1、帐号注册
+git config --global user.email "814156028@qq.com"
+
+
+2、在磁盘建立一个空文件夹test，然后cd进入文件夹里面,git init就可以创建一个git仓库了。
+
+
+3、在文件夹里创建一个文本文件,git status 查看状态，为红色 git add 文件夹名，就可以将文件添加进去。
+
+
+4、git commit -m "note： 。。。"，添加一个修改说明
+
+
+远程操作：
+
+------------------------------------------------------------------
+
+1、创建SSH KEY ，输入 ssh-keygen -t rsa -C "814156028@qq.com"
+
+
+2、登陆GitHub，打开“settings”，“SSH and GPG keys”页面：
+
+  然后，点“New SSH Key”，填上Title，在Key文本框里粘贴id_rsa.pub文件的内容：
+
+
+3、将本地仓库和github关联
+git remote add origin https://github.com/justdomyself/1
+
+git remote add origin https://github.com/justdomyself/vs_Comhelper
+
+4、error: remote origin already exists,若出现这个错误，输入如下指令。
+git remote rm origin
+
+
+5、将本地的推送到github：
+git push -u origin master
