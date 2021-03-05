@@ -31,7 +31,7 @@ git add filename
 5、git log 查看历史版本号
 
 
-远程提交到github：
+远程操作：
 
 ------------------------------------------------------------------
 
@@ -60,3 +60,8 @@ git push -u origin master
 
 1、git init
 2、git clone https:/.......
+--------------------------------------------------------------------
+创建分支的使用：
+git branch branch_test, 创建分支
+git checkout branch_test,获取分支,在这之前要把最新的master推送到服务器
+git push -u origin branch_test,推送分支到服务器
