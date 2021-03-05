@@ -40,3 +40,9 @@ git remote rm origin
 
 5、将本地的推送到github：
 git push -u origin master
+
+--------------------------------------------------------------------
+在新的磁盘位置下载github 下面的文件直接cd 到具体目录，新建文件,然后，
+
+1、git init
+2、git clone https:/.......
