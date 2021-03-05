@@ -1,20 +1,30 @@
 参考：
 https://www.cnblogs.com/manjin666/p/9634324.html
 
-本地操作：
+git bash本地操作：
 ----------------------------------------------------------------
 
 1、帐号注册
+git config --global user.name "justdomyself"
 git config --global user.email "814156028@qq.com"
 
 
 2、在磁盘建立一个空文件夹test，然后cd进入文件夹里面,git init就可以创建一个git仓库了。
 
+cd d：
+mkdir test
+git init
+
 
 3、在文件夹里创建一个文本文件,git status 查看状态，为红色 git add 文件夹名，就可以将文件添加进去。
 
+git add filename
+
 
 4、git commit -m "note： 。。。"，添加一个修改说明
+
+
+5、git log 查看历史版本号
 
 
 远程操作：
